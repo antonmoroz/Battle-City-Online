@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="afde473b-8663-414c-87dc-b08cc1d2b633"
+  name="Enums" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <enumeration
+        Id="e162a6c5-c947-4a35-b279-5b33c9a663cf"
+        name="Speed"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="5a131ac4-aa89-498a-a9c5-a5b7c60fde80"
+            name="Normal" />
+          <enumerationLiteral
+            Id="eb25ea7f-f8da-4e06-a633-3d107ff4964c"
+            name="Slow" />
+          <enumerationLiteral
+            Id="01749f4b-3afa-47db-928b-0d63ad29fb60"
+            name="Fast" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="004ba00c-dca8-40c6-b10e-96f9cae3bdfd"
+        name="BonusType"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="3975c1f6-9eb9-43f9-80eb-98b500ee07f8"
+            name="Grenade" />
+          <enumerationLiteral
+            Id="291dd810-7acb-4831-b7ad-3c7f7e7ba378"
+            name="Helmet" />
+          <enumerationLiteral
+            Id="a8859c54-c236-4513-86d4-7cae2ecdd134"
+            name="Shovel" />
+          <enumerationLiteral
+            Id="9d3436cc-350d-4b81-bc96-ec008638bd84"
+            name="Star" />
+          <enumerationLiteral
+            Id="8487c5dc-87e7-476a-8786-7196a8ae84d9"
+            name="Tank" />
+          <enumerationLiteral
+            Id="c9e30c69-f5b2-4adf-9a00-cc31c454cb9c"
+            name="Timer" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="95cb833a-4cd9-49f6-a5a4-e1170e6998b7"
+        name="Color"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="f679e8e8-89cc-4c00-853b-51dc411daee9"
+            name="Gray" />
+          <enumerationLiteral
+            Id="845763cb-53ce-4793-90e6-23c7ff862093"
+            name="Yellow" />
+          <enumerationLiteral
+            Id="4b48c163-123d-4bf9-a19b-dd2895724eaa"
+            name="Green" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="9f2fc64f-4ad8-42eb-ab38-36d82416a22d"
+        name="BlockType"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="355e08d2-b1e7-4405-b1c1-820bba2149a5"
+            name="Brick" />
+          <enumerationLiteral
+            Id="253f539f-1b2c-4fea-aac7-ef435b3b2397"
+            name="Steel" />
+          <enumerationLiteral
+            Id="3a95342d-935b-43f0-9c59-a21dee31486e"
+            name="Tree" />
+          <enumerationLiteral
+            Id="56037287-283a-41b7-9275-e7613f605890"
+            name="Water" />
+          <enumerationLiteral
+            Id="5ade58a9-285f-4667-af03-20c8ca67a6f9"
+            name="Ice" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="134f9712-2def-4703-850e-189113f0557a"
+        name="Direction"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="a52b95de-ce26-4179-86a7-c43278bf7204"
+            name="Forward" />
+          <enumerationLiteral
+            Id="4addfe18-d111-4694-a4be-b9b38b45b1d1"
+            name="Back" />
+          <enumerationLiteral
+            Id="15ba9a76-4ace-4575-86bd-4de5ed60745d"
+            name="Left" />
+          <enumerationLiteral
+            Id="8a41e2f1-8309-4f7e-a615-11c6e2f5a3f5"
+            name="Right" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

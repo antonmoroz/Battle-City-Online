@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="b5b44e1c-49e2-4564-bdd1-8c90e3443519"
+  name="BattleCityOnline" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a29958f7-ec5f-41ae-9be8-7c97daad0b2a"
+        name="Guid" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="1c0967ae-69cc-4546-bc26-39058a295199"
+        name="Obstacle"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="46ed0551-70a6-4414-b415-53714fd4834b"
+            name="BrickWall" />
+          <enumerationLiteral
+            Id="29cd18b7-abf3-433e-a0e0-6e771e68248f"
+            name="SteelWall" />
+          <enumerationLiteral
+            Id="f8058efc-6bb0-4063-8ab9-7df1090ba9f2"
+            name="Trees" />
+          <enumerationLiteral
+            Id="101491d0-afde-4c5c-85b4-7ac5e8c4a6c8"
+            name="Water" />
+          <enumerationLiteral
+            Id="9a4abb1b-4b8d-4b7e-9e5d-fcfa8bc66e7c"
+            name="Ice" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="afde473b-8663-414c-87dc-b08cc1d2b633"
+        LastKnownName="Enums"
+        LastKnownLocation="Package_0024.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="990df4f3-1f6e-4fd4-8ebf-de178dc51a08"
+        LastKnownName="Package1"
+        LastKnownLocation="Package_0025.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
