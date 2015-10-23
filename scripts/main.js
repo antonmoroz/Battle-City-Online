@@ -1,8 +1,11 @@
 require.config({
-    baseUrl: "scripts"
+    baseUrl: "../scripts",
+    paths: {
+        domReady: "library/domReady"
+    }
 });
 
-require(["game"], function (BattleCity) {
+require(["game", "domReady!"], function (BattleCity) {
     var game = new BattleCity();
     game.run();
     alert("ready");
