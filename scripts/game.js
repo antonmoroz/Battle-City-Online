@@ -11,7 +11,7 @@ define(function () {
     };
 
     /**
-     * Run game
+     * Render game
      */
     BattleCity.prototype.run = function () {
         //TODO: implement it
