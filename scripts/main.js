@@ -7,12 +7,22 @@ require.config({
 
 require(["game", "classes/canvas", "classes/tank", "domReady!"], function (BattleCity, Canvas, Tank) {
     var canvas = new Canvas("LowCanvas", "TopCanvas");
+    canvas.init();
 
     var tank = new Tank(canvas);
-    tank.direction = 3;
+    var direction = 0, color = 0;
     setInterval(function () {
-        canvas.clear();
-        tank.move(3);
+        canvas.clearLowCanvas();
+        canvas.clearTopCanvas();
+
+        tank.direction = direction;
+        tank.color = color;
         tank.draw();
-    }, 50);
+
+        direction++;
+        if (direction === 4) {
+            direction = 0;
+            color = (color + 1) % 4;
+        }
+    }, 500);
 });
