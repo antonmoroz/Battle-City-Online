@@ -1,4 +1,4 @@
-define(["structs/speed", "structs/direction", "structs/color"], function (speed, direction, color) {
+define(["classes/bullet", "structs/speed", "structs/direction", "structs/color"], function (Bullet, speed, direction, color) {
     function Tank(canvas) {
         this.canvas = canvas;
 
@@ -18,126 +18,52 @@ define(["structs/speed", "structs/direction", "structs/color"], function (speed,
     Tank.prototype.draw = function () {
         var sx, sy, sWidth, sHeight;
 
-        if (this.color === color.green) {
-            switch (this.direction) {
-                case direction.up:
-                    sx = 1;
-                    sy = 130;
-                    sWidth = 13;
-                    sHeight = 13;
-                    break;
-                case direction.down:
-                    sx = 65;
-                    sy = 129;
-                    sWidth = 13;
-                    sHeight = 13;
-                    break;
-                case direction.left:
-                    sx = 34;
-                    sy = 129;
-                    sWidth = 13;
-                    sHeight = 13;
-                    break;
-                case direction.right:
-                    sx = 97;
-                    sy = 129;
-                    sWidth = 13;
-                    sHeight = 13;
-                    break;
-            }
+        //Calculate sx and sy coordinates
+        switch (this.direction) {
+            case direction.up:
+                sx = 1;
+                sy = 2;
+                break;
+            case direction.down:
+                sx = 65;
+                sy = 1;
+                break;
+            case direction.left:
+                sx = 34;
+                sy = 1;
+                break;
+            case direction.right:
+                sx = 97;
+                sy = 1;
+                break;
         }
 
-        if (this.color === color.yellow) {
-            switch (this.direction) {
-                case direction.up:
-                    sx = 1;
-                    sy = 2;
-                    sWidth = 13;
-                    sHeight = 13;
-                    break;
-                case direction.down:
-                    sx = 65;
-                    sy = 1;
-                    sWidth = 13;
-                    sHeight = 13;
-                    break;
-                case direction.left:
-                    sx = 34;
-                    sy = 1;
-                    sWidth = 13;
-                    sHeight = 13;
-                    break;
-                case direction.right:
-                    sx = 97;
-                    sy = 1;
-                    sWidth = 13;
-                    sHeight = 13;
-                    break;
-            }
+        if (this.color === color.green) {
+            sy += 128;
         }
 
         if (this.color === color.gray) {
-            switch (this.direction) {
-                case direction.up:
-                    sx = 129;
-                    sy = 2;
-                    sWidth = 13;
-                    sHeight = 13;
-                    break;
-                case direction.down:
-                    sx = 193;
-                    sy = 1;
-                    sWidth = 13;
-                    sHeight = 13;
-                    break;
-                case direction.left:
-                    sx = 162;
-                    sy = 1;
-                    sWidth = 13;
-                    sHeight = 13;
-                    break;
-                case direction.right:
-                    sx = 225;
-                    sy = 1;
-                    sWidth = 13;
-                    sHeight = 13;
-                    break;
-            }
+            sx += 128;
         }
 
         if (this.color === color.red) {
-            switch (this.direction) {
-                case direction.up:
-                    sx = 129;
-                    sy = 130;
-                    sWidth = 13;
-                    sHeight = 13;
-                    break;
-                case direction.down:
-                    sx = 193;
-                    sy = 129;
-                    sWidth = 13;
-                    sHeight = 13;
-                    break;
-                case direction.left:
-                    sx = 162;
-                    sy = 129;
-                    sWidth = 13;
-                    sHeight = 13;
-                    break;
-                case direction.right:
-                    sx = 225;
-                    sy = 129;
-                    sWidth = 13;
-                    sHeight = 13;
-                    break;
-            }
+            sx += 128;
+            sy += 128;
         }
+
+        //Set width and height
+        sWidth = 13;
+        sHeight = 13;
 
         this.canvas.drawOnTopCanvas(sx, sy, sWidth, sHeight, this.x, this.y);
     };
 
+	/**
+	 * Move tank according to specified direction
+	 */
     Tank.prototype.move = function (currentDirection) {
+        this.direction = currentDirection;
+
         switch (currentDirection) {
             case direction.up:
                 this.y--;
@@ -154,6 +80,10 @@ define(["structs/speed", "structs/direction", "structs/color"], function (speed,
         }
 
         this.draw();
+    };
+
+    Tank.prototype.fire = function () {
+        //TODO: implement it
     };
 
     Tank.prototype.destroy = function () {
