@@ -58,9 +58,9 @@ define(["classes/bullet", "structs/speed", "structs/direction", "structs/color"]
         this.canvas.drawOnTopCanvas(sx, sy, sWidth, sHeight, this.x, this.y);
     };
 
-	/**
-	 * Move tank according to specified direction
-	 */
+    /**
+     * Move tank according to specified direction
+     */
     Tank.prototype.move = function (currentDirection) {
         this.direction = currentDirection;
 

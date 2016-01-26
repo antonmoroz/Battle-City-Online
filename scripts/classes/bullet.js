@@ -13,7 +13,6 @@ define(["structs/speed", "structs/direction"], function (speed, direction) {
     Bullet.prototype.draw = function () {
         var sx, sy, sWidth, sHeight;
 
-        //Calculate sx and sy coordinates
         switch (this.direction) {
             case direction.up:
                 sx = 323;
